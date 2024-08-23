@@ -1,5 +1,5 @@
 {
-  "name": "product-list-with-card",
+  "name": "product-list-with-cart",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
