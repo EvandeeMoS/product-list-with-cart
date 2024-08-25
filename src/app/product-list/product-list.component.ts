@@ -1,4 +1,4 @@
-import { Component, Input, Inject } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgFor, CurrencyPipe } from '@angular/common';
 import { ProductService } from '../product.service';
 import { Product } from './product.type';
