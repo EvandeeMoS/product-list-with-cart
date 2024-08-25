@@ -1,0 +1,22 @@
+.main-app {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 6.4rem;
+    display: flex;
+    gap: 2rem;
+    border: 1px solid black;
+}
+
+.product-list {
+    width: 100%;
+    max-width: 90rem;
+}
+
+.side-content {
+    border: 1px solid green;
+    min-width: 20rem;
+    width: 100%;
+    max-width: 36rem;
+}

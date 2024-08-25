@@ -1,1 +1,16 @@
-<p>product-list works!</p>
+<h2 class="list-title">{{listTitle}}</h2>
+
+<ul class="list">
+    <li class="product-card" *ngFor="let item of productList">
+        <div class="button-img-container">
+            <img class="product-img" [src]="item.image.desktop" alt="">
+            <button class="add-cart-btn">
+                <img src="/assets/images/icon-add-to-cart.svg" alt="">
+                <span>Add to cart</span>
+            </button>
+        </div>
+        <p class="product-category">{{item.category}}</p>
+        <p class="product-name">{{item.name}}</p>
+        <p class="product-price">{{item.price | currency}}</p>
+    </li>
+</ul>
