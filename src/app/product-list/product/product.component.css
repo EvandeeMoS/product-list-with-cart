@@ -43,6 +43,7 @@
 
 .add-cart-btn:hover {
     border: 1px solid hsl(14, 86%, 42%);
+    cursor: pointer;
 }
 
 .increment-btn {
