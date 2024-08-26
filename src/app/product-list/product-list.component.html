@@ -2,15 +2,11 @@
 
 <ul class="list">
     <li class="product-card" *ngFor="let item of productList">
-        <div class="button-img-container">
-            <img class="product-img" [src]="item.image.desktop" alt="">
-            <button class="add-cart-btn">
-                <img src="/assets/images/icon-add-to-cart.svg" alt="">
-                <span>Add to cart</span>
-            </button>
-        </div>
-        <p class="product-category">{{item.category}}</p>
-        <p class="product-name">{{item.name}}</p>
-        <p class="product-price">{{item.price | currency}}</p>
+        <app-product 
+            [name]="item.name"
+            [imageUrl]="item.image.desktop"
+            [category]="item.category"
+            [price]="item.price"
+        ></app-product>
     </li>
 </ul>

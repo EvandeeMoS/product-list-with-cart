@@ -1,0 +1,21 @@
+<div class="product-card">
+    <div class="button-img-container">
+        <img class="product-img" [class.selected]="selected" [src]="imageUrl" alt="">
+        <button type="button" (click)="addItemToCart()" class="product-card-btn add-cart-btn" [class.no-display]="selected">
+            <img src="/assets/images/icon-add-to-cart.svg" alt="">
+            <span>Add to cart</span>
+        </button>
+        <button type="button" class="product-card-btn increment-btn" [class.no-display]="!selected">
+            <button (click)="decrementQuantity()">
+                <img src="/assets/images/icon-decrement-quantity.svg" alt="-">
+            </button>
+            <span>{{quantity}}</span>
+            <button (click)="addItemToCart()">
+                <img src="/assets/images/icon-increment-quantity.svg" alt="+">
+            </button>
+        </button>
+    </div>
+    <p class="product-category">{{category}}</p>
+    <p class="product-name">{{name}}</p>
+    <p class="product-price">{{price | currency}}</p>
+</div>
