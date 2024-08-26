@@ -3,7 +3,7 @@
     max-width: 1200px;
     min-height: 100vh;
     margin: 0 auto;
-    padding-top: 6.4rem;
+    padding: 6.4rem 0;
     display: flex;
     gap: 2rem;
 }
@@ -14,8 +14,18 @@
 }
 
 .side-content {
-    border: 1px solid green;
     min-width: 20rem;
     width: 100%;
     max-width: 36rem;
+}
+
+footer {
+    padding: 2.4rem;
+    background: hsl(14, 65%, 9%);
+    text-align: center;
+    color: hsl(13, 31%, 94%);
+}
+
+.attribution a {
+    color: hsl(14, 86%, 42%);
 }
